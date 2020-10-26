@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Loops</title>
+<body>
+    <script>
+        'use script'
+        //last loop value
+        let i= 3;
+
+        while (i){
+            alert (i--);
+        } //last value alerted will be 1
+
+    </script>
+    <script>
+        'use strict'
+        //which value does the while loop show?
+        let i=0;
+         while (++i < 5) alert (i);
+         //* my notes after seeing solution
+//value starts at 1 the ++i first increments i then returns //new value- alerts the incremented value becuase it is prefix- //so i= 4 is incremented to 5 and not shown
+         let i=0;
+         while (i++ < 5) alert (i);
+// also starts at 1, postfix increments i and returns OLD value
+//i++ < 5 will use ++i since the alert is separate- ends on 5
+         // loops will show different values, the first starts at 1, the second will start at 0
+    </script>
+    <script>
+        'use strict'
+        // output even numbers in loop
+                    //missed this part
+        for (let i=0; i<=12; i++) {
+            if (i % 2){
+                alert(i);
+            }
+        }
+    </script>
+    <script>
+        'use strict'
+        //replace for with while
+        for(let i=0; i<3; i++){
+            alert ('number ${i}!');
+
+            let i=0;
+            while(i<3){ //alert while i is still less than 3
+                alert ('number ${i}!');
+                i++;
+            
+            }
+        }
+    </script>
+    <script>
+        'use strict'
+        //repeat until input is correct
+        let num;
+         do{
+             num=prompt ("Enter a number greater than 100?", 0); //prompted to enter a number
+
+         } whil
+    </script>
+</body>    
+</html>
