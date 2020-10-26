@@ -77,17 +77,17 @@
             let pass = prompt ('password?', '');
             //funtion for if the correct passsword is entered
             if (pass === 'TheMaster'){
-                alert ('Welcome!');
+                alert ("Welcome!");
                 //if password id left blank or esc alerts cancelled
             }else if (pass === '' || null){
-                alert ('Cancelled');
+                alert ("Cancelled");
                 //if bad passwork alerts wrong password
             } else {
-                alert ('wrong password');
+                alert ("wrong password");
             }
         //if username is left empty or esc is pressed alert cancel
-        } else if (userName === '' || userName === null){
-                alert ('Canceled');
+        } else if (login === '' || login === null){
+                alert ("Canceled");
          } else { //if anything other than Admin is entered say I don't know you
              alert ("I don't know you");
          }       
