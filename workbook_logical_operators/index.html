@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Logical Operators</title>
+    </head>
+<body>
+    <script>
+        'use strict'
+        //what;s the result of OR?
+        alert (null || 2 || undefined); //should return 2
+    </script>
+
+    <script>
+        'use strict'
+        // what's the result of AND?
+        alert (1 && null && 2);
+        //should return null
+    </script>
+    <script>
+        'use strict'
+        //What's the result of OR'ed alerts?
+        alert (alert (1) || 2 || alert (3));
+        // should return 1 then 2
+    </script>
+    <script>
+        'use strict'
+        //What is the result of AND?
+        alert (1 && null && 2);
+        //should return null
+    </script>
+    <script>
+        'use strict'
+        //What's is the result of AND'ed alerts?
+        alert (alert(1) && alert(2));
+        //won't return either because it is true...undefinted
+    </script>
+    <script>
+        'use strict'
+        //The result of OR AND OR?
+        alert(null || 2 && 3 || 4);
+        //will return false then 4 nope returns 3
+        // runs 2 && 3 result 3 then stops becuase 3 is first truthy value && precedes ||
+    </script>
+    <script>
+        'use strict'
+        //check the range between
+        
+        if (age>=14 && age<=90);
+        
+
+    </script>
+    <script>
+        'use strict'
+        //check the range outside
+        if (!(age>= 14 && age <==90));
+
+        if (age < || > 90);
+
+    </script>
+    <script>
+        'use strict'
+        //the question of "if"
+        if (-1 || 0) alert ('first'); //won't alert wrong, will alert
+        if (-1 && 0) alert ('second');
+        // won't alert
+        if (null || -1 && 1) alert ('third');
+        //will alert- correct
+    </script>
+    <script>
+        'use strict'
+        //Check the login
+        //call initial prompt
+        let login = prompt ("Who's there?", '');
+        // if Admin is entered, go to the next function to enter password
+        if (login === 'Admin'){
+            //prompt to enter password
+            let pass = prompt ('password?', '');
+            //funtion for if the correct passsword is entered
+            if (pass === 'TheMaster'){
+                alert ('Welcome!');
+                //if password id left blank or esc alerts cancelled
+            }else if (pass === '' || null){
+                alert ('Cancelled');
+                //if bad passwork alerts wrong password
+            } else {
+                alert ('wrong password');
+            }
+        //if username is left empty or esc is pressed alert cancel
+        } else if (userName === '' || userName === null){
+                alert ('Canceled');
+         } else { //if anything other than Admin is entered say I don't know you
+             alert ("I don't know you");
+         }       
+
+
+
+    </script>
+</body>       
+</html>
