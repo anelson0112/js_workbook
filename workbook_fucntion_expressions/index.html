@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Function Expressions</title>
+    </head>
+    <body>
+        <script>
+            'use strict'
+            function sayHello(){ //creates function, put it into variable sayHi
+        
+                alert ("hello");
+            }
+            let func= sayHello; //copies function into variable func
+
+            func ();
+            sayHello();
+        </script>    
+        <script>
+            'use strict'
+            //or
+            let sayHi = function (){
+                alert ("Hi");
+            };
+             func();
+             sayHi();
+        </script>
+        <script>
+            'use strict'
+            function ask (question, yes, no){
+                if (confirm (question)) yes()
+                else no();
+            }
+            function showOk () {
+                alert ("you agreed.");
+            }
+            function showCancel(){
+                alert ("you canceled the execution.");
+            }
+            ask ("Do you agree?", showOk, showCancel);
+        </script>
+        <script>
+            'use strict'
+            //or with functiion expressions
+            function ask (quesion, yes, no){
+                if (confirm(quesion)) yes()
+                else no ();
+            }
+            ask (
+                "do you agree?",
+                function () { alert ("you agree.");},
+                function () { alert( "You cancelled");},
+            );
+        </script>
+
+    </body>
+</html>
