@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        //rewrite switch to if
+        switch (browser){
+            case 'Edge':
+            alert ("You've got the Edge!");
+            break;
+
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+            alert ("Ok we support these browsers too");
+            break;
+
+            default:
+            alert("We hope that this page looks ok!")
+        }
+
+        if (browser== 'Edge'){              //replaces switch statement
+            alert ("You've got the Edge!"); //same as first case
+        } else if (browser== 'Chrome' 
+            || browser=='Firefox'
+            || browser=='Safari'
+            || browser == 'Opera'){
+                alert('Okay we support these browsers too'); // uses logical OR to replace other grouped cases
+             } else{
+                 alert ("We hope that this page looks ok!"); //replaces the default
+             }
+    </script>
+    <script>
+        'use strict'
+        //rewrite if to switch
+        let a= +prompt ('a?','');
+
+        if (a== 0){
+            alert (0);
+        }
+        if (a==1){
+            alert (1);
+        }
+        if (a==2 || a== 3){
+            alert('2,3');
+        }
+
+        let a=+prompt ('a?', ''); //establish prompt
+        switch (a){
+            case (0): //if 0 entered alert 0
+            alert (0);
+
+            break; //stop
+
+            case (1): //if 1 entered alert 1
+            alert (1);
+
+            break; //stop
+
+            case (2):
+            case (3):
+
+            alert ('2,3');  //if 2 or 3 entered alert 2 3
+            break;
+
+            default: alert ('???');
+
+        }
+    </script>
+</body>
+</html>
