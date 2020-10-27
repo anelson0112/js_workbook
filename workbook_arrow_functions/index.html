@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Arrow Functions</title>
+    </head>
+    <body>
+        <script>
+            'use strict'
+            //example
+            let sayHi= () => alert ("Hello!");
+            sayHi();
+        </script>
+        <script>
+            'use strict'
+            //rewrite function expression with arrow
+            function ask(question, yes, no){
+                if (confirm (question)) yes()
+                else no ();
+            }
+            ask ("do you agree?",
+            function(){alert ("You agreed.");},
+            function(){alert ("You canceled the execution.");}
+            )
+
+            //rewritten
+            function ask(question, yes, no)  {
+                if (confirm(question)) yes()
+                else no ();
+                
+            }
+            ask(
+                "Do you agree?",
+                () => alert ("agreed."),
+                () => alert ("Cancel")
+            );
+        </script>
+    </body>
+</html>
