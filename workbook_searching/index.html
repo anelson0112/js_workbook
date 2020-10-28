@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <title>Searching</title>
+      
+    </head>
+    <body>
+        <form name="search">
+            <label>
+                "Search this site:"
+                <input type="text" name = "search">
+            </label>
+            <input type="submit" value = "Search!">
+        </form>
+        <hr>
+        <form name= "search-person">
+            "Search the visitors:"
+            <table id = "age-table">
+                <tbody>
+                    <tr>
+                        <td> Age:</td>
+                        <td id="age-list">
+                            <label>
+                                <input type="radio" name="age" value="young">
+                                "less than 18"
+                            </label>
+                            <label>
+                                <input type="radio" name="age" value="mature">
+                                "18-50"
+                            </label>
+                            <label>
+                                <input type="radio" name="age" value="serior">
+                                "more than 50"
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Additionally:</td>
+                        <td id="input">
+                            <input type="text" name= "info [0]">
+                            <input type="text" name="info [1]">
+                            <input type="text" name="info[2]">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="Search!">
+        </form>
+        <script>
+            'use strict'
+            let table= document.getElementById('age-table');
+
+            table.getElementsByTagName('label');
+
+            table.getElementsByTagName('td')[0];
+
+             form.getElementsByName ('search')[0];
+
+             form.getElementsByTagName('input')[0];
+
+             form.getElementsByTagName('input')[3];//WRONG
+
+             let inputs= form.querySelectorAll('input')
+             inputs[inputs.length-1];
+        </script>
+    </body>
+</html>
